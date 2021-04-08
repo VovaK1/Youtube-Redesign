@@ -1,0 +1,18 @@
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icon {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    opacity: 0.24;  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

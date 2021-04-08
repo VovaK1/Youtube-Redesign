@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Youtube</title>
+</head>
+<body>
+  <header class="header">
+    <button class="header__button">
+      <span class="header__button-plank"></span>
+      <span class="header__button-plank"></span>
+      <span class="header__button-plank"></span>
+    </button>
+    <div class="header__logo">
+      <img src="images/logo.svg" alt="Youtube logo">
+    </div>
+    <div class="header__input input">
+      <input type="search" name="search" class="input__search" placeholder="Search">
+      <button type="submit" class="input__button">
+        <svg class="input__icon" width="19" height="19">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="header__icons icons">
+      <li class="icons__item icon">
+        <a href="#" class="icon__link">
+          <svg class="icon__img" width="27" height="20">
+            <use xlink:href="images/sprite.svg#video"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="icons__item icon">
+        <a href="#" class="icon__link">
+          <svg class="icon__img" width="27" height="20">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="icons__item icon">
+        <a href="#" class="icon__link">
+          <svg class="icon__img" width="27" height="20">
+            <use xlink:href="images/sprite.svg#notif"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="header__user" href="#">
+      <img src="images/User.jpg" alt="User" class="header__avatar">
+    </a>
+  </header>
+</body>
+</html>

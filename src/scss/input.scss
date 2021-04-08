@@ -1,0 +1,25 @@
+.input {
+  background: #EBEBEB;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 17px;
+  max-width: 830px;
+  width: 50%;
+
+  &__search {
+    background-color: transparent;
+    border: none;
+    padding: 12px 24px;
+    outline: none;
+  }
+
+  &__button {
+    width: 19px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  padding: 20px 70px 20px 32px;
+  display: flex;
+  align-items: center;
+
+  &__button {
+    background-color: #fff;
+    height: 17px;
+    width: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 28px;
+    cursor: pointer;
+
+    &-plank {
+      width: 20px;
+      height: 3px;
+      display: block;
+      background: #1F2022;
+      border-radius: 20px;
+    }
+  }
+
+  &__logo {
+    width: 116px;
+    height: 25px;
+    margin-right: 60px;
+  }
+
+  &__user {
+    margin-left: 45px;
+  }
+}
