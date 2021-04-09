@@ -7,6 +7,7 @@ const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
+const babel = require('gulp-babel');
 const postcss = require('gulp-postcss');
 const cleanCSS = require('gulp-clean-css');
 const pxToRem = require('gulp-px2rem-converter');
@@ -18,6 +19,14 @@ task('copy:html', () => {
  return src('src/**.html').pipe(dest('dist'))
  .pipe(browserSync.reload({ stream:true }));
 });
+
+task('scripts', () => {
+  return src('src/js/**.js')
+  .pipe(concat('main.js'))
+  .pipe(babel({presets: ['@babel/env']}))
+  .pipe(dest('dist'))
+  .pipe(browserSync.reload({ stream:true }));
+})
 
 task('clean', () => {
   return src('dist/**/*', { read: false }).pipe(rm())
@@ -46,7 +55,7 @@ task('icons', () => {
     plugins: [
       {
         removeAttrs: {
-          attrs: "(fill|stroke|style|width|height|opacity|data*)"
+          attrs: "(stroke|style|width|height|opacity|data*)"
         }
       }
     ]
@@ -81,9 +90,10 @@ watch('src/**.html', series('copy:html')).on('change', browserSync.reload);
 watch('src/scss/**.scss', series('styles')).on('change', browserSync.reload);
 watch('src/images/sprite/**.svg', series('icons')).on('change', browserSync.reload);
 watch('src/images/**/*', series('copy:images')).on('change', browserSync.reload);
+watch('src/js/*.js', series('scripts')).on('change', browserSync.reload);
 
-task('build', series("clean", 'styles', 'icons', 'copy:images', 'copy:html'));
-task('dev', series("clean", 'styles', 'icons', 'copy:images', 'copy:html', 'server'));
+task('build', series("clean", 'styles', 'icons', 'scripts', 'copy:images', 'copy:html'));
+task('dev', series("clean", 'styles', 'icons', 'scripts', 'copy:images', 'copy:html', 'server'));
 
 
 

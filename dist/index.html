@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="main.css">
   <title>Youtube</title>
 </head>
@@ -149,7 +150,7 @@
           </li>
         </ul>
       </nav>
-      
+
         <h2 class="nav__title">Subscriptions</h2>
         <ul class="nav__menu">
           <li class="nav__item">
@@ -201,6 +202,134 @@
         </ul>
 
     </aside>
+
+    <main class="content">
+      <div class="content__channel channel">
+        <a href="#" class="channel__title">
+          <img src="images/Dollie.png" alt="Belle" class="channel__avatar">
+          <span class="channel__text">Dollie Blair</span>
+        </a>
+      
+        <div class="channel__buttons">
+          <div class="channel__button--prev">
+            <svg class="channel__button-icon" width="28" height="28">
+              <use href="images/sprite.svg#Left-arrow"></use>
+            </svg>
+          </div>
+          <div class="channel__button--next">
+            <svg class="channel__button-icon" width="28" height="28">
+              <use href="images/sprite.svg#Right-arrow"></use>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper-container channel__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide channel__slide">
+            <div class="channel__video">
+              <div class="channel__video-thumb">
+                <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+                <span class="channel__video-duration">4:15</span>
+              </div>
+              <h3 class="channel__video-title">A Brief History Of Creation</h3>
+              <div class="channel__video-info">
+                <span class="channel__video-counter">
+                  <span class="channel__video-views">80k views</span>
+                  <span class="channel__video-date">3 days ago</span>
+                </span>
+                <span class="channel__name">Dollie Blair</span>
+              </div>
+            </div>
+          </div><!--slide1-->
+          <div class="swiper-slide">
+            <div class="channel__video">
+              <div class="channel__video-thumb">
+                <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+                <span class="channel__video-duration">4:15</span>
+              </div>
+              <h3 class="channel__video-title">A Brief History Of Creation</h3>
+              <div class="channel__video-info">
+                <span class="channel__video-counter">
+                  <span class="channel__video-views">80k views</span>
+                  <span class="channel__video-date">3 days ago</span>
+                </span>
+                <span class="channel__name">Dollie Blair</span>
+              </div>
+            </div>
+          </div><!--slide2-->
+          <div class="swiper-slide">
+            <div class="channel__video">
+              <div class="channel__video-thumb">
+                <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+                <span class="channel__video-duration">4:15</span>
+              </div>
+              <h3 class="channel__video-title">A Brief History Of Creation</h3>
+              <div class="channel__video-info">
+                <span class="channel__video-counter">
+                  <span class="channel__video-views">80k views</span>
+                  <span class="channel__video-date">3 days ago</span>
+                </span>
+                <span class="channel__name">Dollie Blair</span>
+              </div>
+            </div>
+          </div><!--slide3-->
+          <div class="swiper-slide">
+            <div class="channel__video">
+              <div class="channel__video-thumb">
+                <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+                <span class="channel__video-duration">4:15</span>
+              </div>
+              <h3 class="channel__video-title">A Brief History Of Creation</h3>
+              <div class="channel__video-info">
+                <span class="channel__video-counter">
+                  <span class="channel__video-views">80k views</span>
+                  <span class="channel__video-date">3 days ago</span>
+                </span>
+                <span class="channel__name">Dollie Blair</span>
+              </div>
+            </div>
+          </div><!--slide4-->
+          <div class="swiper-slide">
+            <div class="channel__video">
+              <div class="channel__video-thumb">
+                <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+                <span class="channel__video-duration">4:15</span>
+              </div>
+              <h3 class="channel__video-title">A Brief History Of Creation</h3>
+              <div class="channel__video-info">
+                <span class="channel__video-counter">
+                  <span class="channel__video-views">80k views</span>
+                  <span class="channel__video-date">3 days ago</span>
+                </span>
+                <span class="channel__name">Dollie Blair</span>
+              </div>
+            </div>
+          </div><!--slide5-->
+          <div class="swiper-slide">
+            <div class="channel__video">
+              <div class="channel__video-thumb">
+                <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+                <span class="channel__video-duration">4:15</span>
+              </div>
+              <h3 class="channel__video-title">A Brief History Of Creation</h3>
+              <div class="channel__video-info">
+                <span class="channel__video-counter">
+                  <span class="channel__video-views">80k views</span>
+                  <span class="channel__video-date">3 days ago</span>
+                </span>
+                <span class="channel__name">Dollie Blair</span>
+              </div>
+            </div>  
+          </div><!--slide6-->
+          </div>
+        </div> <!--swiper-container-->
+      </div>
+    </main>
   </div> <!--container-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

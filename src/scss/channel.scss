@@ -1,0 +1,103 @@
+.channel {
+  position: relative;
+  margin-bottom: 50px;
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    color: #19202C;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-left: 12px;
+  }
+  &__video {
+
+    &-thumb {
+      width: 220px;
+      height: 130px;
+      overflow: hidden;
+      border-radius: 14px;
+      position: relative;
+    }
+    &-thumbnail {
+      width: 100%;
+      width: 220px;
+      height: 130px;
+      object-fit: cover;
+    }
+    &-duration {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.3;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 14px;
+      padding: 3px 9px;
+    }
+    &-title {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      line-height: 1.42;
+    }
+    &-info {
+      display: flex;
+      color: rgba(194, 194, 194, 1);
+      font-size: 13px;
+      justify-content: space-between;
+      align-items: center;
+      width: 220px;
+    }
+    &-counter {
+      display: flex;
+      align-items: center;
+    }
+    &-views {
+      margin-right: 5px;
+      &:after {
+        content: '';
+        width: 2px;
+        height: 2px;
+        background: #c2c2c2;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+    }
+  }
+  &__button-icon {
+    opacity: 0.24;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    right: 11%;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+
+  }
+}
+
+.channel__button--prev, .channel__button--next {
+  outline: none;
+  cursor: pointer;
+}
+
