@@ -1,3 +1,5 @@
+$red:  #FF0000;
+
 .nav {
 
   &__menu {
@@ -15,6 +17,12 @@
     color: #898989;
     display: flex;
     align-items: center;
+    &:hover {
+      color: $red;
+      .nav__icon {
+        fill: $red;
+      }
+    }
   }
 
   &__text {
