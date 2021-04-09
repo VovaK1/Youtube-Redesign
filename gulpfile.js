@@ -46,7 +46,7 @@ task('icons', () => {
     plugins: [
       {
         removeAttrs: {
-          attrs: "(fill|stroke|style|width|height|data*)"
+          attrs: "(fill|stroke|style|width|height|opacity|data*)"
         }
       }
     ]

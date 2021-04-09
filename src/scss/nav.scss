@@ -1,0 +1,35 @@
+.nav {
+
+  &__menu {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    margin-bottom: 28px;
+    & .nav__icon {
+      fill: #898989
+    }
+  }
+
+  &__link {
+    color: #898989;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-left: 13px;
+  }
+
+  &__img {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+}
