@@ -9,7 +9,7 @@ $red:  #FF0000;
   &__item {
     margin-bottom: 28px;
     & .nav__icon {
-      fill: #898989
+      fill: #898989;
     }
   }
 
@@ -19,9 +19,9 @@ $red:  #FF0000;
     align-items: center;
     &:hover {
       color: $red;
-      .nav__icon {
+      .nav__icon  {
         fill: $red;
-      }
+    }
     }
   }
 
