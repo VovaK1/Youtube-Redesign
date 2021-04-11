@@ -2,6 +2,25 @@
   position: relative;
   margin-bottom: 50px;
 
+  @include phones {
+   display: none;
+  }
+
+  
+  &-phone {
+    display: none;
+    @include phones {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0 100px 0;
+      height: 100%;
+      .channel__video {
+        margin-bottom: 10px;
+        height: 25%;
+      }
+    }
+  }
+
   &__avatar {
     width: 50px;
     height: 50px;
@@ -13,11 +32,18 @@
     color: #19202C;
     line-height: 1.2;
     margin-bottom: 30px;
+    @include phones {
+      display: none;
+    }
+
     &-desc {
       color: #c2c2c2;
       margin-left: 19px;
       padding-top: 5px;
       cursor: auto;
+      @include tablets {
+        display: none;
+      }
     }
   }
   &__title-name {
@@ -27,7 +53,12 @@
     font-weight: 700;
     font-size: 26px;
   }
+
   &__video {
+    width: 240px;
+    @include tablets {
+      width: 300px;
+    }
 
     &-thumb {
       width: 220px;
@@ -35,12 +66,28 @@
       overflow: hidden;
       border-radius: 14px;
       position: relative;
+      @include tablets {
+        width: 100%;
+        height: 140px;
+      }
+      @include phones {
+        width: 100%;
+        height: 150px;
+      }
     }
     &-thumbnail {
       width: 100%;
       width: 220px;
       height: 130px;
       object-fit: cover;
+      @include tablets {
+        width: 100%;
+        height: 150px;
+      }
+        @include phones {
+          width: 100%;
+          height: 150px;
+        }
     }
     &-duration {
       position: absolute;
@@ -66,7 +113,7 @@
       font-size: 12px;
       justify-content: space-between;
       align-items: center;
-      width: 90%;
+      width: 95%;
     }
     &-counter {
       display: flex;
@@ -99,7 +146,7 @@
     background: red;
     color: #fff;
     border: 1px solid transparent;
-    width: 154px;
+    width: 156px;
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
@@ -120,6 +167,10 @@
     align-items: center;
     justify-content: space-between;
     width: 66px;
+
+    @include tablets {
+      display: none;
+    }
   }
 }
 
@@ -127,4 +178,18 @@
   outline: none;
   cursor: pointer;
 }
+
+.channel-food {
+  
+  @include phones {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  @include phones {
+    height: auto !important;
+  }
+}
+
 

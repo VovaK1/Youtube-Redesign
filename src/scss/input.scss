@@ -7,6 +7,12 @@
   padding-right: 17px;
   max-width: 830px;
   width: 50%;
+  @include tablets {
+    max-width: 300px;
+  }
+  @include phones {
+    width: 0;
+  }
 
   &__search {
     background-color: transparent;
@@ -14,6 +20,9 @@
     padding: 12px 24px;
     outline: none;
     width: 100%;
+    @include phones {
+      display: none;
+    }
   }
 
   &__button {
@@ -22,5 +31,8 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    @include phones {
+      background: #fff;
+    }
   }
 }

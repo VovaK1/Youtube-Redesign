@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="main.css">
   <title>Youtube</title>
 </head>
@@ -223,10 +222,10 @@
           </div>
         </div>
 
-        <!-- Slider main container -->
+        <!-- Slider main container --> 
         <div class="swiper-container channel__slider">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper channel__wrapper">
           <!-- Slides -->
           <div class="swiper-slide channel__slide">
             <div class="channel__video">
@@ -400,7 +399,7 @@
         </div> <!--swiper-container-->
        </div><!--recommended-->
 
-       <div class="content__channel channel">
+       <div class="content__channel channel channel-food">
         <a href="#" class="channel__title">
           <img src="images/Food.png" alt="Belle" class="channel__avatar">
           <h2 class="channel__title-name">Food & Drink</h2>
@@ -526,8 +525,133 @@
         </div> <!--swiper-container-->
       </div> <!--channel-->
     </main>
+
+    <section class="channel-phone">
+      <div class="channel__video">
+        <div class="channel__video-thumb">
+          <img src="images/video-cover1.png" alt="Thumbnail" class="channel__video-thumbnail">
+          <span class="channel__video-duration">4:15</span>
+        </div>
+        <h3 class="channel__video-title">A Brief History Of Creation</h3>
+        <div class="channel__video-info">
+          <span class="channel__video-counter">
+            <span class="channel__video-views">80k views</span>
+            <span class="channel__video-date">3 days ago</span>
+          </span>
+          <span class="channel__name">Dollie Blair</span>
+        </div>
+      </div>
+      <div class="channel__video">
+        <div class="channel__video-thumb">
+          <img src="images/video-cover2.png" alt="Thumbnail" class="channel__video-thumbnail">
+          <span class="channel__video-duration">8:00</span>
+        </div>
+        <h3 class="channel__video-title">Selecting The Right Hotel</h3>
+        <div class="channel__video-info">
+          <span class="channel__video-counter">
+            <span class="channel__video-views">123k views</span>
+            <span class="channel__video-date">1 months ago</span>
+          </span>
+          <span class="channel__name">Dollie Blair</span>
+        </div>
+      </div>
+      <div class="channel__video">
+        <div class="channel__video-thumb">
+          <img src="images/video-cover3.png" alt="Thumbnail" class="channel__video-thumbnail">
+          <span class="channel__video-duration">5:32</span>
+        </div>
+        <h3 class="channel__video-title">Asteroids</h3>
+        <div class="channel__video-info">
+          <span class="channel__video-counter">
+            <span class="channel__video-views">43k views</span>
+            <span class="channel__video-date">12 days ago</span>
+          </span>
+          <span class="channel__name">Dollie Blair</span>
+        </div>
+      </div>
+      <div class="channel__video">
+        <div class="channel__video-thumb">
+          <img src="images/video-cover4.png" alt="Thumbnail" class="channel__video-thumbnail">
+          <span class="channel__video-duration">6:40</span>
+        </div>
+        <h3 class="channel__video-title">Telescopes 101</h3>
+        <div class="channel__video-info">
+          <span class="channel__video-counter">
+            <span class="channel__video-views">11k views</span>
+            <span class="channel__video-date">6 months ago</span>
+          </span>
+          <span class="channel__name">Dollie Blair</span>
+        </div>
+      </div>
+      <div class="channel__video">
+        <div class="channel__video-thumb">
+          <img src="images/video-cover5.png" alt="Thumbnail" class="channel__video-thumbnail">
+          <span class="channel__video-duration">1:45</span>
+        </div>
+        <h3 class="channel__video-title">Medical Care Is Just</h3>
+        <div class="channel__video-info">
+          <span class="channel__video-counter">
+            <span class="channel__video-views">18k views</span>
+            <span class="channel__video-date">2 days ago</span>
+          </span>
+          <span class="channel__name">Dollie Blair</span>
+        </div>
+      </div>
+      <div class="channel__video">
+        <div class="channel__video-thumb">
+          <img src="images/video-cover6.png" alt="Thumbnail" class="channel__video-thumbnail">
+          <span class="channel__video-duration">2:51</span>
+        </div>
+        <h3 class="channel__video-title">Moon Gazing</h3>
+        <div class="channel__video-info">
+          <span class="channel__video-counter">
+            <span class="channel__video-views">67k views</span>
+            <span class="channel__video-date">4 months ago</span>
+          </span>
+          <span class="channel__name">Dollie Blair</span>
+        </div>
+      </div>  
+    </section>
+
   </div> <!--container-->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <footer class="footer">
+    <div class="footer__container">
+      <ul class="footer__nav nav-phones">
+        <li class="nav-phones__item active">
+          <a href="#" class="nav-phones__link">
+            <svg class="nav__icon nav-phones__icon" width="25" height="21">
+              <use href="images/sprite.svg#home"></use>
+            </svg>
+            <div class="nav-phones__text">Home</div>
+          </a>
+        </li>
+        <li class="nav-phones__item">
+          <a href="#" class="nav-phones__link">
+            <svg class="nav__icon nav-phones__icon" width="25" height="21">
+              <use href="images/sprite.svg#trending"></use>
+            </svg>
+            <div class="nav-phones__text">Trending</div>
+          </a>
+        </li>
+        <li class="nav-phones__item">
+          <a href="#" class="nav-phones__link">
+            <svg class="nav__icon nav-phones__icon" width="25" height="21">
+              <use href="images/sprite.svg#subscriptions"></use>
+            </svg>
+            <div class="nav-phones__text">Subscriptions</div>
+          </a>
+        </li>
+        <li class="nav-phones__item">
+          <a href="#" class="nav-phones__link">
+            <svg class="nav__icon nav-phones__icon" width="25" height="21">
+              <use href="images/sprite.svg#library"></use>
+            </svg>
+            <div class="nav-phones__text">Library</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>

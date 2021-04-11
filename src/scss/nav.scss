@@ -1,7 +1,6 @@
 $red:  #FF0000;
 
 .nav {
-
   &__menu {
     margin-bottom: 60px;
   }
@@ -40,5 +39,30 @@ $red:  #FF0000;
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 30px;
+  }
+
+  &-phones__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-phones__icon {
+    opacity: 0.24;
+    margin-bottom: 5px;
+  }
+  &-phones__text {
+    font-size: 14px;
+    color: #898989;
+  }
+}
+
+.nav-phones__item.active {
+  .nav-phones__text {
+    color: #FF0000;
+  }
+  .nav-phones__icon {
+    fill: #FF0000;
+    opacity: 0.5;
   }
 }

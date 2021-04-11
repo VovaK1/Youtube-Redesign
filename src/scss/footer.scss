@@ -1,0 +1,25 @@
+.footer {
+  display: none;
+
+  @include phones {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 5;
+    background: #fff;
+  }
+
+  &__container {
+    padding: 15px 28px;
+  }
+
+  &__nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

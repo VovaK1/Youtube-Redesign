@@ -13,6 +13,7 @@ const cleanCSS = require('gulp-clean-css');
 const pxToRem = require('gulp-px2rem-converter');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
+const gcmq = require('gulp-group-css-media-queries');
 
 
 task('copy:html', () => {
@@ -20,8 +21,14 @@ task('copy:html', () => {
  .pipe(browserSync.reload({ stream:true }));
 });
 
+const scripts = [
+  'node_modules/jquery/dist/jquery.min.js',
+  'node_modules/swiper/swiper-bundle.js',
+  'src/js/*.js'
+]
+
 task('scripts', () => {
-  return src('src/js/**.js')
+  return src(scripts)
   .pipe(concat('main.js'))
   .pipe(babel({presets: ['@babel/env']}))
   .pipe(dest('dist'))
@@ -35,14 +42,16 @@ task('clean', () => {
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
-  'src/scss/**.scss'
+  'node_modules/swiper/swiper-bundle.css',
+  'src/scss/main.scss'
 ]
 
 task('styles', () => {
   return src(styles)
-  .pipe(sass())
+  .pipe(concat('main.scss'))
+  .pipe(sass().on('error', sass.logError))
   .pipe(postcss([ autoprefixer() ]))
-  .pipe(concat('main.css'))
+  .pipe(gcmq())
   .pipe(pxToRem())
   .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(dest('dist'))

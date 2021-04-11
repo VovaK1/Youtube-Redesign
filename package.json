@@ -21,6 +21,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-postcss": "^9.0.0",
     "gulp-px2rem-converter": "^1.5.9",
     "gulp-rm": "^2.0.0",
@@ -31,5 +32,9 @@
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
     "postcss": "^8.2.9"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "swiper": "^6.5.6"
   }
 }
