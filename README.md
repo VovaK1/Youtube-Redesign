@@ -1,1 +1,1 @@
-My redesign of the YouTube page with adaptive(by maquette).
+My redesign of the YouTube page with adaptive.
